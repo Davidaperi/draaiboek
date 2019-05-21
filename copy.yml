@@ -9,7 +9,5 @@
         src: files/restore.sh
         dest: /home/root/restore.sh
         
-  - name: Change the working directory to somedir/ before executing the command.
-    shell: restore.sh
-    args:
-      chdir: /home/root/
+  - name: Execute the script
+    command: sh /home/root/restore.sh

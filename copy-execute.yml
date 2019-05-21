@@ -1,0 +1,9 @@
+    
+---
+- name: copy and run file
+  hosts: all
+ 
+  tasks:
+ 
+     - name: Copy and Execute the script 
+       script: /files/restore.sh

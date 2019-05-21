@@ -1,0 +1,8 @@
+---
+- name: Date
+  hosts: all
+ 
+  tasks:
+ 
+  - name: Date
+    command: date

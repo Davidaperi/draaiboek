@@ -1,0 +1,9 @@
+---
+- name: Hello World!
+  hosts: all
+ 
+  tasks:
+ 
+  - name: Copy ansible inventory file to client
+    copy: src=/home/aperi/test.txt dest=/home/aperi/test.txt
+            owner=root group=root mode=0644

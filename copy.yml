@@ -10,6 +10,6 @@
         dest: /home/root/restore.sh
         
   - name: Change the working directory to somedir/ before executing the command.
-    shell: restore.sh >> restore.txt
+    shell: restore.sh
     args:
       chdir: /home/root/

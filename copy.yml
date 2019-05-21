@@ -7,6 +7,9 @@
   - name: Copy file remote
     template:
         src: files/restore.sh
-        dest: /bin/sh/restore.sh
-  - name: Execute the command in remote shell; stdout goes to the specified file on the remote.
+        dest: /home/root/restore.sh
+        
+  - name: Change the working directory to somedir/ before executing the command.
     shell: restore.sh >> restore.txt
+    args:
+      chdir: /home/root/

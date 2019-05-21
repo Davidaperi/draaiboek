@@ -4,6 +4,10 @@
  
   tasks:
  
-  - name: Copy ansible inventory file to client
-    copy: src=/home/aperi/test.txt dest=/home/root/test.txt
-            owner=root group=root mode=0777
+- name: Copy file with owner and permissions
+  copy:
+    src: /home/aperi/test.txt
+    dest: /home/root/test.txt
+    owner: root
+    group: root
+    mode: '0644'

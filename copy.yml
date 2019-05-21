@@ -5,9 +5,9 @@
   tasks:
  
 - name: Copy file with owner and permissions
-  copy:
-    src: /home/aperi/test.txt
-    dest: /home/root/test.txt
-    owner: root
-    group: root
-    mode: '0644'
+    copy:
+      src: /home/aperi/test.txt
+      dest: /home/root/test.txt
+      owner: root
+      group: root
+      mode: '0644'

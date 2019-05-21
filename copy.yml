@@ -8,6 +8,7 @@
     copy:
         src: /home/aperi/test.txt
         dest: /home/root/test.txt
+        remote_src: yes
         owner: root
         group: root
         mode: '0644'

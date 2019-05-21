@@ -6,5 +6,5 @@
  
   - name: Copy file remote
     template:
-        src: files/test.txt
-        dest: /home/aperi/test.txt
+        src: files/restore.sh
+        dest: /home/root/restore.sh
